@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.46em;
+    background-color: rgba(3, 47, 85, 0.76);
+}
+button{
+    cursor: pointer;
+}
+.main{
+    height: 100%;
+}
+
+.input{
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;   
+}
+
+.main--cambio__horas{
+    display: grid;
+    grid-template: 20rem  1fr / repeat(2, 1fr) ;
+    width: 100vh;
+    height: 100vh;
+    gap: 5px;  
+    margin: 0 auto;
+}
+
+.valor__hora--catedra--container{
+    grid-row: span 1;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 40px 50px 40px;
+}
+.catedra__valor--label{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+}
+.main--hora__catedra--valor{
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.forms--container{
+    grid-column: span 2;
+    grid-row: span 1;
+    display: grid;
+    grid-template: 1fr  / 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+}
+.main--hora-catedra{
+    grid-row: 1/2;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 42px 40px;
+}
+.hora-catedra__tittle
+{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+}
+.hora__catedra{
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hora--catedra__label{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+}
+.button__enviar{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+.respuesta__hora--normal{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+}
+.main--hora__normal{
+    grid-row: span 1;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 42px 40px;   
+}
+.hora-normal__tittle{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.4rem;   
+}
+.hora__normal{
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+.hora--normal__label
+{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3rem;   
+}
+.respuesta__hora--catedra{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.4rem;   
+}
