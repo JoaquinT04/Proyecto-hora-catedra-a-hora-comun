@@ -1,0 +1,81 @@
+
+body{
+    /*Mobile*/
+    width: 100vh;
+    height: 100%;
+}
+
+
+.input{
+    /*mobile*/
+    width: 200px;   
+}
+
+.main--cambio__horas{
+    /*mobile*/
+    grid-template-rows: 160px 1fr;
+}
+.valor__hora--catedra--container{
+
+    /*mobile*/
+    min-height: 140px;
+    min-width: 322px;
+    max-width: 484px;
+    border: 2px solid rgb(2, 0, 7);
+    grid-row: span 1;
+}
+.main--hora__catedra--valor{
+    /*Mobile*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.forms--container{
+    /*Mobile*/
+    min-width: 322px;
+    max-width: 484px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*Mobile*/
+.forms--container section{
+    min-width: 320px;
+    height: 200px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+.main--hora-catedra{
+    /*Mobile*/
+    align-items: center;
+    border-color: black;
+}
+.hora-catedra__tittle
+{
+    /*Mobile*/
+    font-size: 2rem;
+    display:none;
+}
+.hora__catedra{
+    /*Mobile*/
+    align-items: center;
+    min-height: 100px;
+}
+.respuesta__hora--normal{
+    /*Mobile*/
+    margin-top: 10px;
+}
+.main--hora__normal{
+    /*mobile*/
+    border-color: black;
+    min-height:240px ;  
+    align-items: center;
+}
+.hora-normal__tittle{
+    display: none;
+}
+.hora__normal{     
+    /*mobile*/
+    align-items: center;
+    min-height: 100px;
+}
