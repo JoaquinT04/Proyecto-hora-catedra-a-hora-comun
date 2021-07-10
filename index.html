@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/style-main-mobile.css" media="(max-width:480px)">
+        <link rel="stylesheet" href="./css/style-main-mobile.css" media="(max-width:320px)">
         <title>Hora catedra</title>
     </head>
     <body>
@@ -16,7 +16,10 @@
                     <form class="main--hora__catedra--valor">
 
                         <label for="hora--catedra--valor" class="catedra__valor--label">Ingrese cuantos minutos equivalen 1 hora catedra</label>
-                        <input class="input" id="hora--catedra--valor" type="number" name="hora--catedra--valor" min="1" max="59">
+                        <input class="input" id="hora--catedra--valor" type="number" name="hora--catedra--valor" min="40" max="50">
+
+                        <!--                         <button type="button" class="button__enviar">Aceptar</button> -->
+                    
                     </form>    
                 </section>
 
@@ -30,7 +33,7 @@
                             <button onclick="calcularHoraNormal()" type="button" class="button__enviar">Calcular Hora Normal</button>
 
                         </form>
-                        <p class="respuesta__hora--normal">Hola Vamos a probar</p>
+                        <p id="respuesta__hora--normal" class="respuesta__hora--normal"></p>
                     </section>
                     
                     <section class="main--hora__normal">
@@ -46,13 +49,13 @@
         
                             <button onclick="CalcularHoraCatedra()" type="button" class="button__enviar">Calcular Hora Catedra</button>
                         </form>
-                        <p class="respuesta__hora--catedra">Hola Vamos a probar</p>
+                        <p id="respuesta__hora--catedra" class="respuesta__hora--catedra"></p>
                     </section>
                 </section>
 
             </section>
+            
         </main>
-
 
 
 

@@ -114,6 +114,7 @@ button{
     margin: 10px 0px;
 }
 .respuesta__hora--normal{
+    text-align: center;
     font-size: 2rem;
     font-weight: bold;
     line-height: 1.4rem;
@@ -147,6 +148,7 @@ button{
     line-height: 1.3rem;   
 }
 .respuesta__hora--catedra{
+    text-align: center;
     font-size: 2rem;
     font-weight: bold;
     line-height: 1.4rem;   

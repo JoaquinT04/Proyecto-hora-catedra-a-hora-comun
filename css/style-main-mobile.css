@@ -4,8 +4,9 @@ body{
     width: 100vh;
     height: 100%;
 }
-
-
+.main{
+    width: calc(100vh - 200px);
+}
 .input{
     /*mobile*/
     width: 200px;   
