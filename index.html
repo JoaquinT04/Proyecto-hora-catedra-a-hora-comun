@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/style-main-mobile.css" media="(max-width:320px)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="./css/style-main-mobile.css">
+        <link rel="stylesheet" href="./css/main.css" media="(min-width:600px)">
         <title>Hora catedra</title>
     </head>
     <body>
@@ -15,7 +15,7 @@
                 <section class="valor__hora--catedra--container">
                     <form class="main--hora__catedra--valor">
 
-                        <label for="hora--catedra--valor" class="catedra__valor--label">Ingrese cuantos minutos equivalen 1 hora catedra</label>
+                        <label for="hora--catedra--valor" class="catedra__valor--label">Hora cátedra equivalente a: 40, 45, ... (escribir la opción de minutos más adecuada)</label>
                         <input class="input" id="hora--catedra--valor" type="number" name="hora--catedra--valor" min="40" max="50">
 
                         <!--                         <button type="button" class="button__enviar">Aceptar</button> -->
@@ -25,10 +25,9 @@
 
                 <section class="forms--container">                    
                     <section class="main--hora-catedra">
-                        <h2 class="hora-catedra__tittle">Hora Catedra</h2>
                         <form class="hora__catedra">
 
-                            <label for="hora--catedra" class="hora--catedra__label">Hora Catedra</label>
+                            <label for="hora--catedra" class="hora--catedra__label">Hora Cátedra</label>
                             <input class="input"  id="hora--catedra" type="number" name="hora--catedra" min="1">
                             <button onclick="calcularHoraNormal()" type="button" class="button__enviar">Calcular Hora Normal</button>
 
@@ -37,14 +36,13 @@
                     </section>
                     
                     <section class="main--hora__normal">
-                        <h2 class="hora-normal__tittle">Hora Normal</h2>
 
                         <form class="hora__normal">
         
-                            <label for="hora--normal" class="hora--normal__label">Hora Normal</label>
+                            <label for="hora--normal" class="hora--normal__label">Hora Reloj</label>
                             <input class="input" type="number" name="hora--normal" id="hora--normal" min="0" >
         
-                            <label for="minutos--normal" class="hora--normal__label">Minutos Normal</label>
+                            <label for="minutos--normal" class="hora--normal__label">Minutos</label>
                             <input class="input" type="number" name="minutos--normal" id="minutos--normal" min="0" max="59">
         
                             <button onclick="CalcularHoraCatedra()" type="button" class="button__enviar">Calcular Hora Catedra</button>

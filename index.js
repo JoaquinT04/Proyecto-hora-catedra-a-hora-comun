@@ -1,24 +1,32 @@
 const calcularHoraNormal = () =>{
+    // Obtengo la hora del primer input
 
     let unaHoraCatedra = document.getElementById("hora--catedra--valor").value;
 
     unaHoraCatedra = parseInt(unaHoraCatedra);
     
+    // Pregunto si ese input recibio un dato 
     if(isNaN(unaHoraCatedra)){
 
         alert('No ingresaste cuanto vale una hora catedra')
     }else{
+        // Obtengo el dato del segundo input
 
         let cantidadDeHorasCatedra = document.getElementById("hora--catedra").value;
     
         cantidadDeHorasCatedra = parseInt(cantidadDeHorasCatedra);
     
+        // Paso las horas catedra a minutos y divido por 60 para conocer la hora normal 
         const horaNormal = parseInt((cantidadDeHorasCatedra * unaHoraCatedra) / 60);
+
+        // Paso las horas catedra a minutos y saco el resto por 60 para conocer los minutos normal 
     
         const minutosNormal =(cantidadDeHorasCatedra * unaHoraCatedra) % 60;
         
+        // Obtengo el elemento p donde quiero colocar el mensaje
         const resultP = document.getElementById("respuesta__hora--normal")
         
+        // Pregunto si la hora o los minutos tienen un solo digito para poder adornar con ceros si solo tienen un digito
         if(horaNormal < 10){
             if(minutosNormal < 10){
         

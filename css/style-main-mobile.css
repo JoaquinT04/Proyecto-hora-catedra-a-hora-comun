@@ -1,82 +1,143 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
 body{
     /*Mobile*/
-    width: 100vh;
+    font-size: 1.46rem;
+    background-color: rgba(3, 47, 85, 0.76);
+    width: 100%;
     height: 100%;
 }
+button{
+    cursor: pointer;
+}
 .main{
-    width: calc(100vh - 200px);
+    width: 100%
 }
 .input{
     /*mobile*/
-    width: 200px;   
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+    outline: none;
+    height: 50px;
+    width: 100%;   
 }
 
 .main--cambio__horas{
     /*mobile*/
-    grid-template-rows: 160px 1fr;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr) ;
+    gap: 10px 0px;  
+    margin: 10px;
 }
 .valor__hora--catedra--container{
-
     /*mobile*/
-    min-height: 140px;
-    min-width: 322px;
-    max-width: 484px;
-    border: 2px solid rgb(2, 0, 7);
     grid-row: span 1;
-}
-.main--hora__catedra--valor{
-    /*Mobile*/
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.forms--container{
-    /*Mobile*/
-    min-width: 322px;
-    max-width: 484px;
-    height: 100vh;
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
-}
-/*Mobile*/
-.forms--container section{
-    min-width: 320px;
-    height: 200px;
-    margin-bottom: 30px;
-    padding: 20px 0;
-}
-.main--hora-catedra{
-    /*Mobile*/
     align-items: center;
-    border-color: black;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 40px 50px 40px;
+}
+.catedra__valor--label{
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+.main--hora__catedra--valor{
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.catedra__valor--label{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+.forms--container{
+    /*Mobile*/
+    grid-column: span 2;
+    grid-row: span 1;
+    display: grid;
+    grid-template: 1fr  / 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.main--hora-catedra{
+    grid-row: 1/2;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 12px 40px;
+    text-align: center;
 }
 .hora-catedra__tittle
 {
-    /*Mobile*/
     font-size: 2rem;
-    display:none;
+    font-weight: bold;
+    line-height: 3.4rem;
 }
 .hora__catedra{
-    /*Mobile*/
-    align-items: center;
-    min-height: 100px;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-.respuesta__hora--normal{
-    /*Mobile*/
-    margin-top: 10px;
+.hora--catedra__label{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+.button__enviar{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
 }
 .main--hora__normal{
-    /*mobile*/
-    border-color: black;
-    min-height:240px ;  
-    align-items: center;
+    grid-row: span 1;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 12px 40px;   
+    text-align: center;
 }
-.hora-normal__tittle{
-    display: none;
-}
-.hora__normal{     
-    /*mobile*/
-    align-items: center;
-    min-height: 100px;
+.hora--normal__label{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+    margin-top: 5px;
 }
